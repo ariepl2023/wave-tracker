@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600&display=swap');
+
+.navbar {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(42, 157, 143, 0.15);
+  padding: 0 32px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  direction: rtl;
+  font-family: 'Outfit', sans-serif;
+}
+
+.navbar-brand {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 24px;
+  letter-spacing: 4px;
+  color: #2a9d8f;
+  cursor: default;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.navbar-link {
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5a7a8a;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  background: #e8f5f3;
+  color: #2a9d8f;
+}
+
+.navbar-link.active {
+  background: #e8f5f3;
+  color: #2a9d8f;
+  font-weight: 600;
+}
+
+.navbar-logout {
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #e76f51;
+  background: none;
+  border: 1.5px solid rgba(231, 111, 81, 0.25);
+  font-family: 'Outfit', sans-serif;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.navbar-logout:hover {
+  background: #e76f51;
+  color: white;
+  border-color: transparent;
+}

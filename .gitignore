@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Environment variables — never commit real secrets
+server/.env
+.env
+
+# Claude AI workspace files
+.claude/
+
+# Build output
+dist/
+dist-ssr/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*

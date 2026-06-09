@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+.plans-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eef7f9 0%, #faf4ed 100%);
+  font-family: 'Outfit', sans-serif;
+  direction: rtl;
+}
+
+.plans-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 24px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.plans-header {
+  text-align: center;
+}
+
+.plans-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #8faab8;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+}
+
+.plans-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 52px;
+  letter-spacing: 3px;
+  color: #264653;
+  line-height: 1;
+  margin: 0 0 10px;
+}
+
+.plans-subtitle {
+  font-size: 15px;
+  color: #8faab8;
+  margin: 0;
+}
+
+.plans-grid {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.plan-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px 28px;
+  border: 1.5px solid rgba(42, 157, 143, 0.15);
+  box-shadow: 0 2px 12px rgba(38, 70, 83, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.plan-pro {
+  background: #264653;
+  border-color: transparent;
+  box-shadow: 0 12px 40px rgba(38, 70, 83, 0.25);
+  transform: scale(1.03);
+}
+
+.plan-current {
+  border-color: #2a9d8f;
+}
+
+.plan-badge {
+  position: absolute;
+  top: -13px;
+  right: 28px;
+  background: linear-gradient(135deg, #e76f51, #cf5c3f);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 20px;
+}
+
+.plan-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.plan-name {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 32px;
+  letter-spacing: 3px;
+  color: #264653;
+  margin: 0;
+}
+
+.plan-pro .plan-name {
+  color: #ffffff;
+}
+
+.plan-desc {
+  font-size: 13px;
+  color: #8faab8;
+  margin: 0;
+}
+
+.plan-pro .plan-desc {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.plan-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.plan-price-amount {
+  font-size: 36px;
+  font-weight: 700;
+  color: #264653;
+  line-height: 1;
+}
+
+.plan-pro .plan-price-amount {
+  color: #ffffff;
+}
+
+.plan-price-period {
+  font-size: 14px;
+  color: #8faab8;
+}
+
+.plan-pro .plan-price-period {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.plan-features li {
+  font-size: 14px;
+  color: #5a7a8a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.plan-pro .plan-features li {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.feature-check {
+  color: #2a9d8f;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.plan-pro .feature-check {
+  color: #3bbcad;
+}
+
+.plan-button {
+  padding: 13px;
+  border-radius: 12px;
+  border: 1.5px solid rgba(42, 157, 143, 0.3);
+  background: transparent;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2a9d8f;
+  cursor: pointer;
+  transition: all 0.15s;
+  margin-top: 8px;
+}
+
+.plan-button:hover:not(:disabled) {
+  background: #2a9d8f;
+  color: white;
+  border-color: transparent;
+}
+
+.plan-button-pro {
+  background: linear-gradient(135deg, #e76f51, #cf5c3f);
+  border-color: transparent;
+  color: white;
+}
+
+.plan-button-pro:hover:not(:disabled) {
+  background: linear-gradient(135deg, #f07c60, #e06040);
+}
+
+.plan-button-current {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.plan-button:disabled {
+  cursor: default;
+}
+
+.plans-back {
+  background: none;
+  border: none;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  color: #8faab8;
+  cursor: pointer;
+  align-self: flex-start;
+  padding: 0;
+  transition: color 0.15s;
+}
+
+.plans-back:hover {
+  color: #264653;
+}
+
+.plans-error {
+  font-size: 13px;
+  color: #c0392b;
+  text-align: center;
+  padding: 10px 14px;
+  background: rgba(192, 57, 43, 0.07);
+  border-radius: 8px;
+  border: 1px solid rgba(192, 57, 43, 0.18);
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .plans-grid {
+    flex-direction: column;
+  }
+
+  .plan-pro {
+    transform: none;
+  }
+}
