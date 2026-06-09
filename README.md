@@ -1,4 +1,4 @@
-# WaveTracker 🌊
+# WaveTracker 
 
 A full-stack wave forecast web app for Israeli beaches. Users select a beach, set wave and wind thresholds, and receive a daily Telegram digest whenever conditions match their preferences.
 
